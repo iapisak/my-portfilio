@@ -49,7 +49,6 @@ header {
     width: 100%;
     height: auto;
     padding-top: 30px;
-    background-color: #fff;
 }
 header .form-control,header .form-control:focus {color: #fff; background-color: #555555;border: none;box-shadow:none;}
 .btn-outline-secondary {color: #ffffff;background-color: #555555;}
@@ -124,7 +123,7 @@ nav ul>li> .active, .nav-link:hover {color: #fc4733;border-bottom: 1px solid #fc
 .navbar {padding: 0;height: 120px;padding-bottom: 30px;}
 .icons {float: right;margin-right: 0;margin-left: 0;}
 
-nav {width: 100%;background-color: #fff;}
+nav {width: 100%;}
 nav ul>li .nav-link {padding: 0;}
 nav a:not([href]):not([tabindex]) {color: #000;margin: 0 12px;}
 nav ul>li> a {
@@ -275,7 +274,7 @@ nav ul>li> a {
 }
 /*---- Section1-Styles ----*/
 .banner {width: 100%;height: auto;padding-bottom: 100px;}
-.section1 {width: 100%;height: auto;padding-bottom: 100px;}
+.section1 {width: 100%;height: auto;padding-bottom: 70px;}
 .section1 .way_icon .fa-area-chart,.way_icon .fa-clipboard,.way_icon .fa-users {
     font-size: 35px;     
     margin-bottom: 15px;
@@ -365,7 +364,7 @@ nav ul>li> a {
 }
 .section1 h2.background span,.section2 h2.background span,.section3 h2.background span {
   /* to hide the lines from behind the text, you have to set the background color the same as the container */
-    background: #fff;
+    background: whitesmoke;
     color: #2e2c39;
     padding: 0 15px;
     font-weight: 600;
@@ -611,7 +610,7 @@ nav ul>li> a {
     background: none;
 }
 /*---- footer-Styles ----*/
-footer .footer {width: 100%;height: auto;padding: 65px 0;border-bottom: 1px solid #cfcfcf;}
+footer .footer {width: 100%;height: auto;padding: 0 0 65px 0;border-bottom: 1px solid #cfcfcf;}
 footer .footer img {padding-bottom: 30px;}
 footer .footer h5 {padding-bottom: 30px;font-size: 17px;font-weight: 600;}
 footer .footer { list-style-type:none;  padding-left:0px; margin-left:2px;}
@@ -947,16 +946,13 @@ textarea.form-control {
 .services .inner-content {
     border: 1px solid gray;
     padding: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 .services {
-    border-bottom: 1px solid gray;
-    background-color: #fff;
     padding-bottom: 50px;
 }
 .services h2{
     font-size: 35px;
-    padding-bottom: 30px;
     font-weight: 500;
 }
 .services p {
@@ -964,17 +960,21 @@ textarea.form-control {
     color: #8d8d8d;
     font-size: 14px;
     line-height: 25px;
-    letter-spacing: 0.5px;
     text-align: left;
-    font-weight: 400;
     margin-bottom: 20px;
 }
 .services .image {
-    float: left;
-    width: 50%;
-    height: 485px;
-    shape-margin: 20px;
-    margin-right: 40px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 .services .thumbnail {padding: 0;border: none;border-radius: 0;object-fit: cover;}
