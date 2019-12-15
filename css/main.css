@@ -317,7 +317,7 @@ nav ul>li> a {
 }
 
 /*---- Section2-Styles ----*/
-.section2 {width: 100%;height: auto;padding-bottom: 100px;}
+.section2 {width: 100%;height: auto;}
 .section2 .img-thumbnail {
     padding: 0;
     position: absolute;
@@ -337,18 +337,17 @@ nav ul>li> a {
     position: relative;
     height: 345px;
 }
-.section1 h2,.section2 h2,.section3 h2 {
+.section1 h2,.section2 h2,.section3 h2, .section4 h2  {
     font-size: 24px;
-    margin-bottom: 70px;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
 }
-.section1 h2.background,.section2 h2.background,.section3 h2.background {
+.section1 h2.background,.section2 h2.background,.section3 h2.background,.section4 h2.background {
   position: relative;
     z-index: 1;
 }
-.section1 h2.background:before,.section2 h2.background:before,.section3 h2.background:before {
+.section1 h2.background:before,.section2 h2.background:before,.section3 h2.background:before,.section4 h2.background:before {
     border-top: 1px solid #828088;
     content: "";
     margin: 0 auto;
@@ -362,7 +361,7 @@ nav ul>li> a {
     width: 100%;
     z-index: -1;
 }
-.section1 h2.background span,.section2 h2.background span,.section3 h2.background span {
+.section1 h2.background span,.section2 h2.background span,.section3 h2.background span,.section4 h2.background span {
   /* to hide the lines from behind the text, you have to set the background color the same as the container */
     background: whitesmoke;
     color: #2e2c39;
@@ -610,7 +609,7 @@ nav ul>li> a {
     background: none;
 }
 /*---- footer-Styles ----*/
-footer .footer {width: 100%;height: auto;padding: 0 0 65px 0;border-bottom: 1px solid #cfcfcf;}
+footer .footer {width: 100%;height: auto;border-bottom: 1px solid #222121; padding-bottom: 20px;}
 footer .footer img {padding-bottom: 30px;}
 footer .footer h5 {padding-bottom: 30px;font-size: 17px;font-weight: 600;}
 footer .footer { list-style-type:none;  padding-left:0px; margin-left:2px;}
@@ -1483,7 +1482,7 @@ textarea.form-control {
     .section1 .card .card-body h5 {font-size: 19px;padding-bottom: 0;}
     .section1 .card .card-body .card-text {font-size: 12px;line-height: 25px;}
     .section1 .way_icon .fa-area-chart, .way_icon .fa-clipboard, .way_icon .fa-users {font-size: 25px;}
-    .section1 h2, .section2 h2, .section3 h2 {margin-bottom: 50px;}
+    .section1 h2, .section2 h2, .section3 h2 {margin-bottom: 0px;}
     #section3 h2 {margin-bottom: 50px;}
     .section2 p {font-size: 13px;line-height: 25px;}
     .section2 p:nth-child(1) {padding-bottom: 0px;margin-top: -4px;}

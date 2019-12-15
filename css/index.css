@@ -4,8 +4,15 @@ body {
     background: whitesmoke;
 }
 
-.section1 {
-    
+.about-wrap {
+    padding: 60px 0;
+    background-color: #2e2c39;
+    margin-bottom: 60px;
+    color: whitesmoke;
+}
+
+.about-wrap h2 {
+    margin-bottom: 20px;
 }
 
 .navbar-brand {
@@ -17,7 +24,37 @@ body {
 #about-me p {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    color: #8d8d8d;
+    margin: 0;
+}
+
+.projects-wraps {
+    padding-top: 30px;
+    background-image: url("https://images.unsplash.com/photo-1552327391-3a8f1ea03a20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section3 h2.background:before {
+    background-image: url("https://images.unsplash.com/photo-1552327391-3a8f1ea03a20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.section3 h2.background span {
+    padding: 5px;
+}
+
+.inner-content {
+    background-color: rgb(245, 245, 245);
+}
+
+#projects .descrisption {
+    font-weight: 400;
 }
 
 #projects p {
@@ -94,6 +131,7 @@ body {
 }
 
 .profile-box {
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -111,6 +149,7 @@ body {
 }
 
 .profile-photo img {
+    margin-top: 30px;
     width: 400px;
 }
 
@@ -173,6 +212,24 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+footer {
+    margin: 0 0 20px 0;
+    padding: 50px 0 80px 0;
+    background-image: url("https://images.unsplash.com/photo-1552327391-3a8f1ea03a20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section2 h2.background:before {
+    background-image: url("https://images.unsplash.com/photo-1552327391-3a8f1ea03a20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 @media only screen and (max-width: 700px) {
