@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Merriweather&display=swap');
+
+body {
+    background: whitesmoke;
+}
+
+.about-wrap {
+    padding: 60px 0;
+    background-color: #2e2c39;
+    margin-bottom: 60px;
+    color: whitesmoke;
+}
+
+.about-wrap h2 {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    letter-spacing: 1.6px;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+#about-me p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+
+.projects-wraps {
+    padding-top: 30px;
+    background-image: url("https://images.unsplash.com/photo-1552327391-3a8f1ea03a20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section3 h2.background:before {
+    background-image: url("https://images.unsplash.com/photo-1552327391-3a8f1ea03a20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.section3 h2.background span {
+    padding: 5px;
+}
+
+.inner-content {
+    background-color: rgb(245, 245, 245);
+}
+
+#projects .descrisption {
+    font-weight: 400;
+}
+
+#projects p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #8d8d8d;
+}
+
+#projects h1, h4 {
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: #2e2c39;
+}
+
+#projects h6 {
+    padding: 0 5px;
+    color: #2e2c39;
+}
+
+#projects h6:hover {
+    transform: scale(1.01);
+    color: rgb(101, 152, 219);
+}
+
+#projects img {
+    border: 2px solid #2e2c39;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
+}
+
+#projects img:hover {
+    transition: transform .4s;
+    transform: scale(1.01);
+	-moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+}
+
+.project-content {
+    padding: 20px;
+}
+
+#profile p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #8d8d8d;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#profile .small {
+    font-size: 12px;
+    color: #2e2c39;
+    margin: 0;
+}
+
+#profile .medium {
+    font-size: 14px;
+    color: #2e2c39;
+    margin: 0;
+}
+
+#profile h6 {
+    margin-top: 10px;
+}
+
+.btn-warning {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.profile-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-box p {
+    font-size: 10px;
+    margin: 0;
+}
+
+.profile-box h1 {
+    font-weight: normal;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 1.6px;
+    font-size: 60px;
+    color: #2e2c39;
+}
+
+.profile-photo img {
+    margin-top: 30px;
+    width: 400px;
+}
+
+#experience {
+    padding: 40px 10px;
+}
+
+#experience p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #8d8d8d;
+}
+
+#experience h1 {
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 1.6px;
+    margin-bottom: 20px;
+    color: #2e2c39;
+}
+
+#experience .experiences-box {
+    padding: 0 40px 0 0;
+}
+
+.information-box h4 {
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 1.6px;
+    margin-bottom: 20px;
+    color: #2e2c39;
+}
+
+#contact-me .medium {
+    font-size: 14px;
+    color: #2e2c39;
+    margin: 0;
+}
+
+.wrap {
+    min-height: 100vh;
+    margin-bottom: 100px;
+}
+
+.wrap-skills {
+    min-height: 30vh;
+    margin-bottom: 30px;
+}
+
+.skill-container {
+    background-image: url("https://depechecode.io/wp-content/uploads/2017/12/web_design_desk2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: whitesmoke;
+    font-size: 110%;
+}
+
+.skill-detail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    margin: 0 0 20px 0;
+    padding: 50px 0 80px 0;
+    background-image: url("https://images.unsplash.com/photo-1552327391-3a8f1ea03a20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section2 h2.background:before {
+    background-image: url("https://images.unsplash.com/photo-1552327391-3a8f1ea03a20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .profile-box h1 {
+        font-size: 2em;
+    }
+
+    .profile-photo img {
+        width: 100%;
+    }
+
+    .project-ver {
+        flex-direction: column;
+    }
+
+    #projects h6 {
+        font-size: 13px;
+    }
+
+    #projects h1, h4 {
+        font-size: 1.5em;
+    }
+
+    #experience {
+        padding: 20px;
+    }
+
+    .section1 {
+        padding-bottom: 20px;
+    }
+
+    .section1 h2 {
+        padding-left: 10px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    footer  .footer {
+        padding: 10px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .experience-container {
+        flex-direction: column;
+    }
+
+    #contact-me img {
+        width: 50px;
+    }
+}
