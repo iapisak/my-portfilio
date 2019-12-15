@@ -107,7 +107,7 @@ header .search-container {
 }
 .navbar-light .navbar-nav .nav-link {
     color: #332b35;
-    padding: 8px 0;
+    padding: 8px;
     line-height: 15px;
     padding-bottom: 0;
     text-transform: uppercase;
@@ -809,7 +809,7 @@ textarea.form-control {
     font-style: italic;
     font-size: 13px;
 }
-.form-control:focus {background-color: transparent;border-color: #acacac;box-shadow: none;}
+.form-control:focus {border-color: #acacac;box-shadow: none;}
 /*==============================================
                 Blog-Page
 ===============================================*/
