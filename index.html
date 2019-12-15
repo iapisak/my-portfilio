@@ -52,7 +52,7 @@
     <section id="projects" class="section3">
         <h2 class="background"><span>My Projects</span></h2>
         <div class="projects-wraps">
-        <div class="container" data-interval="false" data-ride="carousel">
+        <div class="container">
             <p class="descrisption" data-aos="fade-up" data-aos-duration="700">These are some current examples of my work while studying web development at General Assembly.</p>
         </div>
         <div id="carouselExampleControls" class="carousel carousel-fade" data-interval="false" data-ride="carousel">
@@ -211,34 +211,45 @@
                 <h1>Potisanmetee</h1>
                 <a href="#contact-me"><button class="btn-warning">Contact me</button></a>
               </div>
-              <p>Looking for Intership or full time job as Software developer. Highly motivated aspiring software engineer, hard working, and like to learn. Recently completing extensive 3 months Full time Software Engineering Immersive boot camp, full-stack apps with key programming languages and dive into data structures, design patterns, APIs, and more., from General Assemble, San Francisco.</p>
+              <p>Aboutme <br>Looking for Intership or full time job as Software developer. Highly motivated aspiring software engineer, hard working, and like to learn. Recently completing extensive 3 months Full time Software Engineering Immersive boot camp, full-stack apps with key programming languages and dive into data structures, design patterns, APIs, and more., from General Assemble, San Francisco.</p>
             </div>
             <div class="profile-photo">
-                <img src="image/project-1.png" alt="about-bg" class="thumbnail image">
+                <img src="image/jun.png" alt="about-bg" class="thumbnail image">
             </div>
         </div>
         <div id="experience" class="experience-container container d-flex" data-aos="fade-up" data-aos-duration="700">
           <div class="col-lg-8 experiences-box">
               <h1>Experience</h1>
-              <div>
+              <div class="experience-details">
                 <p class="small">Cavallo Point Lodge, Sausalito, CA</p>
                 <p class="small">Banquet Server</p>
                 <p class="small">October 2016 - June 2019</p>
-                <p>Excelled within service-oriented positions (concurrent with college studies), delivering premium customer service and attracting repeat customers. We focus on weddings, corporate meetings and other large-scale events and we provide a full and robust menu. Banquet Servers are responsible for all table service duties as well as prep work and closeout tasks. We’d prefer to hire professionals with previous waitstaff experience. If you’ve worked in a banquet setting before, we definitely want to hear from you.</p>
-            </div>
-            <div>
+                <p> 
+                  * Excelled within service-oriented positions (concurrent with college studies)<br>
+                  * Delivering premium customer service and attracting repeat customers.<br>
+                  * Focus on weddings, corporate meetings and other large-scale events.<br>
+                  * Responsible for all table service duties as well as prep work and closeout tasks.
+                </p>
+              </div>
+              <div class="experience-details">
                 <p class="small">NYK Line (Thailand), Bangkok Metropolitan Area, Thailand</p>
                 <p class="small">Freight Documentation Import & Import Customers Service</p>
                 <p class="small">March 2003 - March 2010</p>
-                <p>Primarily responsible for providing effective customer service for all internal and external customers by utilizing in-depth knowledge of operational (import or export) processes</p>
-            </div>
+                <p>
+                  * Primarily responsible for providing effective customer service for all internal and external customers by utilizing in-depth knowledge of operational (import or export) processes.<br>
+                  * Manage customer relationships in assigned accounts.<br>
+                  * Proactively provide shipment status and notify customers of any delays regarding arrival, delivery or dispatch of shipments.<br>
+                  * Ensure Standard Operating Procedures are available for each account serviced. Follow SOP in performance of all operational processes.<br>
+                  * Co-ordinate with overseas offices, agents, customers and domestic vendors for timely shipments in assigned accounts
+                </p>
+              </div>
           </div>
           <div class="information-box">
             <div>
               <h4>Education</h4>
               <p>- General Assembly, San Francisco<br>
-                Software Engineering Immersive, 480 hours<br>
-                September 16, 2019 - December 12, 2019</p>
+                  Software Engineering Immersive, 480 hours<br>
+                  September 16, 2019 - December 12, 2019</p>
               <p>- Suan Sunandha Rajabhat University, Thailand<br>
               Business Computer, BA 2 years</p>
               <p>- Thonburi Vocational University, Thailand<br>
@@ -250,7 +261,6 @@
               <p>- Cooking<br>
                 - Watching movie <br>
                 - Gaming
-                  
               </p>
             </div>
           </div>
@@ -289,28 +299,28 @@
                     </p>
 
                     <h5>Please get in touch</h5>
-                        <form>
-                            <ul class="list-unstyled">
-                                <li class="row">
-                                  <div class="col-md-6 col-sm-12">
-                                    <input required type="text" class="form-control" placeholder="Name">
-                                  </div>
-                                  <div class="col-md-6 col-sm-12">
-                                    <input required type="text" class="form-control" placeholder="Email">
-                                  </div>
-                                </li>
-                                <li class="row">
-                                  <div class="col-md-12">
-                                    <textarea required class="form-control massage" placeholder="Your Message" rows="4" id="comment"></textarea>
-                                  </div>
-                                </li>
-                                <li class="row">
-                                  <div class="col-md-12">
-                                    <button type="submit" class="btn btn-default">submit it</button>
-                                  </div>
-                                </li>
-                            </ul>
-                        </form>
+                    <form action="mail.php" method="POST">
+                        <ul class="list-unstyled">
+                            <li class="row">
+                              <div class="col-md-6 col-sm-12">
+                                <input required type="text" class="form-control" placeholder="Name" id="name" name="name">
+                              </div>
+                              <div class="col-md-6 col-sm-12">
+                                <input required type="email" class="form-control" placeholder="Email" id="email" name="email">
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col-md-12">
+                                <textarea required class="form-control massage" placeholder="Your Message" rows="4" id="comment" name="comment"></textarea>
+                              </div>
+                            </li>
+                            <li class="row">
+                              <div class="col-md-12">
+                                <button type="submit" class="btn btn-default">submit it</button>
+                              </div>
+                            </li>
+                        </ul>
+                      </form>
                   </div>
               </div>
           </div>
@@ -329,6 +339,11 @@
                       event.preventDefault();
                       $(this).ekkoLightbox();
                   });
+
+      // $('#contact').on('submit', function(e) {
+      //   e.preventDefault();
+      // })
+      
     </script>
   </body>
 </html>
