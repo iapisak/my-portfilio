@@ -211,7 +211,7 @@
                 <h1>Potisanmetee</h1>
                 <a href="#contact-me"><button class="btn-warning">Contact me</button></a>
               </div>
-              <p>Aboutme <br>Looking for Intership or full time job as Software developer. Highly motivated aspiring software engineer, hard working, and like to learn. Recently completing extensive 3 months Full time Software Engineering Immersive boot camp, full-stack apps with key programming languages and dive into data structures, design patterns, APIs, and more., from General Assemble, San Francisco.</p>
+              <p>Aboutme <br>Looking for full time job as Software developer. Highly motivated aspiring software engineer, hard working, and like to learn. Recently completing extensive 3 months Full time Software Engineering Immersive boot camp, full-stack apps with key programming languages and dive into data structures, design patterns, APIs, and more., from General Assemble, San Francisco.</p>
             </div>
             <div class="profile-photo">
                 <img src="image/jun.png" alt="about-bg" class="thumbnail image">
@@ -295,11 +295,11 @@
                     <p class="medium">
                         Email : apotisanmetee@gmail.com <br>
                         Phone : 415-942-4504<br>
-                        Address : 515 Lincoln Ave-apt 214, San Jose, CA 95126
+                        Address : San Jose, CA 95126
                     </p>
 
                     <h5>Please get in touch</h5>
-                    <form action="mail.php" method="POST">
+                    <form id="my-form" action="https://formspree.io/mnqjqgpn" method="POST">
                         <ul class="list-unstyled">
                             <li class="row">
                               <div class="col-md-6 col-sm-12">
@@ -311,15 +311,16 @@
                             </li>
                             <li class="row">
                               <div class="col-md-12">
-                                <textarea required class="form-control massage" placeholder="Your Message" rows="4" id="comment" name="comment"></textarea>
+                                <textarea required class="form-control massage" placeholder="Your Message" rows="4" id="comment" name="message"></textarea>
                               </div>
                             </li>
                             <li class="row">
                               <div class="col-md-12">
-                                <button type="submit" class="btn btn-default">submit it</button>
+                                <button id="my-form-button" type="submit" class="btn btn-default">submit it</button>
                               </div>
                             </li>
                         </ul>
+                        <p id="my-form-status" class="alert"></p>
                       </form>
                   </div>
               </div>
@@ -339,11 +340,55 @@
                       event.preventDefault();
                       $(this).ekkoLightbox();
                   });
+                  
+      let validation = false
 
-      // $('#contact').on('submit', function(e) {
-      //   e.preventDefault();
-      // })
+      window.addEventListener("DOMContentLoaded", function() {
+
+        // get the form elements defined in your form HTML above
+        
+        var form = document.getElementById("my-form");
+        var button = document.getElementById("my-form-button");
+        var status = document.getElementById("my-form-status");
+
+        // Success and Error functions for after the form is submitted
+        
+        function success() {
+          form.reset();
+          // button.style = "display: none ";
+          status.innerHTML = "Thank you! I will reply you as soon as possible";
+        }
+
+        function error() {
+          status.innerHTML = "Oops! There was a problem. Please fill in all the input";
+        }
+
+        // handle the form submission event
+
+        form.addEventListener("submit", function(ev) {
+          ev.preventDefault();
+          var data = new FormData(form);
+          ajax(form.method, form.action, data, success, error);
+        });
+      });
       
+      // helper function for sending an AJAX request
+
+      function ajax(method, url, data, success, error) {
+        var xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState !== XMLHttpRequest.DONE) return;
+          if (xhr.status === 200) {
+            success(xhr.response, xhr.responseType);
+          } else {
+            error(xhr.status, xhr.response, xhr.responseType);
+          }
+        };
+        xhr.send(data);
+      }
+
     </script>
   </body>
 </html>

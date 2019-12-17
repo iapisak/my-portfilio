@@ -4,6 +4,12 @@ body {
     background: whitesmoke;
 }
 
+.alert {
+    color: rgb(236, 80, 24) !important;
+    font-weight: 500;
+    padding: 10px;
+}
+
 .about-wrap {
     padding: 60px 0;
     background-color: #2e2c39;
