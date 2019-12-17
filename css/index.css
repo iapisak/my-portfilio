@@ -27,6 +27,10 @@ body {
     font-size: 25px;
 }
 
+.navbar-brand:hover {
+    transform: scale(1.03);
+}
+
 #about-me p {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -77,12 +81,12 @@ body {
 
 #projects h6 {
     padding: 0 5px;
-    color: #2e2c39;
+    color: rgb(101, 152, 219);
 }
 
 #projects h6:hover {
     transform: scale(1.01);
-    color: rgb(101, 152, 219);
+    color: rgb(21, 91, 184);
 }
 
 #projects img {

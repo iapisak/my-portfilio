@@ -119,7 +119,7 @@ header .search-container {
     color: #fc4733;
     font-family: 'Montserrat', sans-serif;
 }
-nav ul>li> .active, .nav-link:hover {color: #fc4733;border-bottom: 1px solid #fc4733;}
+nav ul>li> .active, .nav-link:hover {color: #fc4733;border-bottom: 1px solid #fc4733; transform: scale(1.05);}
 .navbar {padding: 0;height: 120px;padding-bottom: 30px;}
 .icons {float: right;margin-right: 0;margin-left: 0;}
 
@@ -611,6 +611,7 @@ nav ul>li> a {
 /*---- footer-Styles ----*/
 footer .footer {width: 100%;height: auto;border-bottom: 1px solid #222121; padding-bottom: 20px;}
 footer .footer img {padding-bottom: 30px;}
+footer .footer img:hover {transform: scale(1.05);}
 footer .footer h5 {padding-bottom: 30px;font-size: 17px;font-weight: 600;}
 footer .footer { list-style-type:none;  padding-left:0px; margin-left:2px;}
 footer .footer p {font-size: 17px; display: block;padding-bottom: 15px;font-weight: 300;padding-right: 25px;}
